@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bfv-9Q-7ed">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,18 +29,43 @@
         <!--Chore View-->
         <scene sceneID="Yq5-Cp-GuY">
             <objects>
-                <viewController title="Chore View" id="Uc4-uh-gik" sceneMemberID="viewController">
+                <viewController title="Chore View" id="Uc4-uh-gik" customClass="ViewController" customModule="PennAppsFall2k18" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cvz-zy-EsT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-Oy-vQy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChoreCell" rowHeight="48" id="cdu-rB-TJO">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cdu-rB-TJO" id="exk-bq-NhB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tEk-Oy-vQy" firstAttribute="bottom" secondItem="j6O-9M-Jsr" secondAttribute="bottom" id="HEf-ka-8jb"/>
+                            <constraint firstItem="tEk-Oy-vQy" firstAttribute="top" secondItem="j6O-9M-Jsr" secondAttribute="top" id="Lch-1a-sfj"/>
+                            <constraint firstItem="tEk-Oy-vQy" firstAttribute="trailing" secondItem="j6O-9M-Jsr" secondAttribute="trailing" id="Njy-Nk-tiM"/>
+                            <constraint firstItem="tEk-Oy-vQy" firstAttribute="leading" secondItem="j6O-9M-Jsr" secondAttribute="leading" id="b7L-u5-3xm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j6O-9M-Jsr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="G2y-g6-mKS"/>
+                    <connections>
+                        <outlet property="choresTableView" destination="tEk-Oy-vQy" id="NQr-q1-eKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnI-1l-nOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="-328"/>
+            <point key="canvasLocation" x="680.79999999999995" y="-344.07796101949026"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2dY-Xb-lgB">
