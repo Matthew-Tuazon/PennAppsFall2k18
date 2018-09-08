@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class choresViewController: UIViewController {
 
     @IBOutlet weak var choresTableView: UITableView!
-    var choreList = ["Do Laundry", "Take out trash", "Wash Sal", "Make sure bathroom clean"]
+    
+    
+    var choreList = ["Do Laundry", "Take out trash", "Wash Sal", "Make sure bathroom clean and make sure and make sure this is long task"]
     var userList = ["Sal", "Matt", "Sean", "Mickey"]
     
     
@@ -25,7 +27,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension choresViewController: UITableViewDelegate, UITableViewDataSource { //extension for chore view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return choreList.count
     }
@@ -33,15 +35,20 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ChoreCell"){
             
-            cell.textLabel?.text = userList[indexPath.row] + ": " + choreList[indexPath.row]
-            
+            cell.textLabel?.text = choreList[indexPath.row] + ": "
+            cell.detailTextLabel?.text = userList[indexPath.row]
             
             return cell
         }
+        
+        
+
+        
         return UITableViewCell()
         }
     }
-    
-    
+
+
+
 
 
