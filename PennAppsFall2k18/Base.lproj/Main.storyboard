@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xUd-8b-PXV" userLabel="Users Table View">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xUd-8b-PXV" userLabel="Users Table View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" textLabel="9oU-sY-r6n" style="IBUITableViewCellStyleDefault" id="KM5-va-yRj" userLabel="UserCell">
@@ -42,13 +41,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6n4-0E-eSr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Users" id="YzJ-EC-oqS">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YK2-3Q-snb"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6n4-0E-eSr" firstAttribute="leading" secondItem="yrI-sP-xK0" secondAttribute="leading" id="B4c-27-gJG"/>
+                            <constraint firstItem="xUd-8b-PXV" firstAttribute="leading" secondItem="yrI-sP-xK0" secondAttribute="leading" id="DRV-a8-vcQ"/>
+                            <constraint firstItem="xUd-8b-PXV" firstAttribute="bottom" secondItem="yrI-sP-xK0" secondAttribute="bottom" id="L8w-u8-arJ"/>
+                            <constraint firstItem="6n4-0E-eSr" firstAttribute="top" secondItem="yrI-sP-xK0" secondAttribute="top" id="Q3P-mS-FIc"/>
+                            <constraint firstItem="xUd-8b-PXV" firstAttribute="trailing" secondItem="yrI-sP-xK0" secondAttribute="trailing" id="W7q-3Z-Epd"/>
+                            <constraint firstItem="xUd-8b-PXV" firstAttribute="top" secondItem="6n4-0E-eSr" secondAttribute="bottom" id="X1n-2O-DGl"/>
+                            <constraint firstItem="6n4-0E-eSr" firstAttribute="trailing" secondItem="yrI-sP-xK0" secondAttribute="trailing" id="gWM-m2-ib8"/>
+                            <constraint firstItem="xUd-8b-PXV" firstAttribute="top" secondItem="6n4-0E-eSr" secondAttribute="bottom" id="y02-Qc-Y3G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yrI-sP-xK0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Users" id="nG6-1G-lWW"/>
                     <connections>
-                        <outlet property="usersTableView" destination="xUd-8b-PXV" id="pwg-If-S0v"/>
+                        <outlet property="usersTableView" destination="xUd-8b-PXV" id="ppf-3n-5h0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5Z-E4-pyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-Oy-vQy">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChoreCell" textLabel="dsL-Hv-Egc" detailTextLabel="wP9-TF-ro9" rowHeight="71" style="IBUITableViewCellStyleValue1" id="cdu-rB-TJO">
@@ -93,13 +110,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANe-m8-80Q">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Chores" id="IpT-cd-ux5">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="N6g-DC-xcF"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ANe-m8-80Q" firstAttribute="trailing" secondItem="tEk-Oy-vQy" secondAttribute="trailing" id="DuD-79-74Y"/>
                             <constraint firstItem="tEk-Oy-vQy" firstAttribute="bottom" secondItem="j6O-9M-Jsr" secondAttribute="bottom" id="HEf-ka-8jb"/>
-                            <constraint firstItem="tEk-Oy-vQy" firstAttribute="top" secondItem="j6O-9M-Jsr" secondAttribute="top" id="Lch-1a-sfj"/>
                             <constraint firstItem="tEk-Oy-vQy" firstAttribute="trailing" secondItem="j6O-9M-Jsr" secondAttribute="trailing" id="Njy-Nk-tiM"/>
                             <constraint firstItem="tEk-Oy-vQy" firstAttribute="leading" secondItem="j6O-9M-Jsr" secondAttribute="leading" id="b7L-u5-3xm"/>
+                            <constraint firstItem="ANe-m8-80Q" firstAttribute="top" secondItem="j6O-9M-Jsr" secondAttribute="top" id="d3Q-1e-nIc"/>
+                            <constraint firstItem="ANe-m8-80Q" firstAttribute="leading" secondItem="tEk-Oy-vQy" secondAttribute="leading" id="kfr-XB-qyB"/>
+                            <constraint firstItem="tEk-Oy-vQy" firstAttribute="top" secondItem="ANe-m8-80Q" secondAttribute="bottom" id="pTy-y4-n03"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j6O-9M-Jsr"/>
                     </view>
