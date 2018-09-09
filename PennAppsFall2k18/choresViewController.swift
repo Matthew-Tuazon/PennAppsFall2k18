@@ -12,10 +12,13 @@ class choresViewController: UIViewController {
 
     @IBOutlet weak var choresTableView: UITableView!
     
+    @IBAction func addChore() {
+        let newRowIndex = choreList.count
+        
+    }
     
     var choreList = ["Do Laundry", "Take out trash", "Wash Sal", "Make sure bathroom clean and make sure and make sure this is long task"]
     var userList = ["Sal", "Matt", "Sean", "Mickey"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

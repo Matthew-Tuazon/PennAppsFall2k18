@@ -13,6 +13,9 @@
 		B708FDD5214350C600F5C150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B708FDD4214350C600F5C150 /* Assets.xcassets */; };
 		B708FDD8214350C600F5C150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B708FDD6214350C600F5C150 /* LaunchScreen.storyboard */; };
 		B7B8B700214408A200400E68 /* usersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8B6FF214408A200400E68 /* usersViewController.swift */; };
+		B7B8B702214436C600400E68 /* addNewChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8B701214436C600400E68 /* addNewChoreViewController.swift */; };
+		B7B8B7042144AF6800400E68 /* addNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8B7032144AF6800400E68 /* addNewUserViewController.swift */; };
+		B7B8B7062144D98600400E68 /* choreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8B7052144D98600400E68 /* choreItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B708FDD7214350C600F5C150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B708FDD9214350C600F5C150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7B8B6FF214408A200400E68 /* usersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersViewController.swift; sourceTree = "<group>"; };
+		B7B8B701214436C600400E68 /* addNewChoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewChoreViewController.swift; sourceTree = "<group>"; };
+		B7B8B7032144AF6800400E68 /* addNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewUserViewController.swift; sourceTree = "<group>"; };
+		B7B8B7052144D98600400E68 /* choreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choreItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				B708FDCD214350C400F5C150 /* AppDelegate.swift */,
 				B708FDCF214350C400F5C150 /* choresViewController.swift */,
 				B7B8B6FF214408A200400E68 /* usersViewController.swift */,
+				B7B8B701214436C600400E68 /* addNewChoreViewController.swift */,
 				B708FDD1214350C400F5C150 /* Main.storyboard */,
+				B7B8B7052144D98600400E68 /* choreItem.swift */,
+				B7B8B7032144AF6800400E68 /* addNewUserViewController.swift */,
 				B708FDD4214350C600F5C150 /* Assets.xcassets */,
 				B708FDD6214350C600F5C150 /* LaunchScreen.storyboard */,
 				B708FDD9214350C600F5C150 /* Info.plist */,
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B8B7062144D98600400E68 /* choreItem.swift in Sources */,
 				B708FDD0214350C400F5C150 /* choresViewController.swift in Sources */,
+				B7B8B702214436C600400E68 /* addNewChoreViewController.swift in Sources */,
+				B7B8B7042144AF6800400E68 /* addNewUserViewController.swift in Sources */,
 				B708FDCE214350C400F5C150 /* AppDelegate.swift in Sources */,
 				B7B8B700214408A200400E68 /* usersViewController.swift in Sources */,
 			);
